@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Primer ejemplo de angular.js</title>
+</head>
+<body>
+    <h1>Bienvenido a mi pagina {{nombre}}</h1>
+    <div class="contenedor">
+        <form action="">
+            ¿Cómo te llamas? <input type="text" ng-model="nombre">
+        </form>
+    </div>
+    <hr>
+    <h1>Doble binding</h1>
+    <div class="contenedor">
+      <form action="">
+        <input type="text" ng-model="dato" />
+          {{dato}}
+        <input type="button" value="hola" ng-click="dato='hola'" />
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+</body>
+</html>

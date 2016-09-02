@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="acumuladorApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Segundo ejemplo de angular.js</title>
+
+</head>
+
+<body ng-controller="acumuladorAppCtrl">
+    <div>
+      <h1>Acumulador</h1>
+      <h2>Cuanto quieres sumar</h2>
+      <input type="text" ng-model="cuanto" size="4" />
+      <br />
+      <input type="button" value="+" ng-click="sumar()"/>
+      <input type="button" value="-" ng-click="restar()"/>
+      <h2>TOTAL ACUMULADO:</h2>
+      En el acumulador llevamos <span>{{total}}</span>
+    </div>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
